@@ -76,30 +76,9 @@ document.querySelectorAll('.menu').forEach((e)=>{
    
 })
 
-// const menuA = document.querySelectorAll('#ul_menu li a');
-// const menuLi = document.querySelectorAll('#ul_menu li')
-// const body = document.querySelector('body')
-// menuA.forEach(item => {
-//   item.addEventListener('click', ()=>{
-//     for (var i = 0; i < 4; i++) {
-//      menuLi[i].classList.remove('foco')
-//      menuLi[i].classList.remove('li_contato_foco')
-//    }
-//    console.log(item)
-//    if(document.querySelector('#li_'+item.id).classList.contains('li_contato')){
-      
-//     document.querySelector('#li_'+item.id).classList.add('li_contato_foco')
-//   }else{
-//     document.querySelector('#li_'+item.id).classList.add('foco')
-   
-//   }
-//   });
-  
-
-  
-// })
 
 
+// scroll automatico suave
 document.querySelector('#logo_header a').
 addEventListener('click', (event)=>{
   event.preventDefault();
