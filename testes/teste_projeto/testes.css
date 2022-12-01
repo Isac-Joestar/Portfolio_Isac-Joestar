@@ -1,0 +1,149 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #101722;
+  
+}
+.cards_container{
+    width: 100%;
+    height: 70vh;
+    background-color: #101722;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    position: relative;
+    overflow-x: scroll;
+
+  
+    
+}
+.arrow-right,
+.arrow-left{
+    position: absolute;
+    z-index: 2;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    height: 420px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+.arrow-right{
+    background: linear-gradient(to left, transparent 0, black 200%);
+    left: 0;
+}
+.arrow-left{
+    background: linear-gradient(to right, transparent 0, black 200%);
+    right: 0;
+}
+.cards_container::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.arrow-right:hover,
+.arrow-left:hover{
+    opacity: 1;
+}
+
+.cards{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+.card{
+    background-color: #181A24;
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(201, 201, 201);
+    border: 1px solid rgba(202, 202, 202, 0.301);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.card .div_img{
+    height: 20vh;
+    overflow: hidden;
+}
+.card .div_img img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.card .div_txt{
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card_title{
+    color: rgb(236, 235, 235);
+    font-size: 1.5rem;
+}
+.card_description{
+    margin-top: 4px;
+    color: rgb(201, 201, 201);
+
+}
+
+.card_inf{
+    margin-top: 15px;
+    color: rgb(236, 236, 236);
+}
+
+.card_inf div{
+    display: flex;
+    flex-direction: row;
+}
+.card_inf div span{
+    margin-left: 5px;
+}
+.tipo span{
+    color: blueviolet;
+}
+.status span{ 
+    color: darkgoldenrod;
+}
+
+.div_btn{
+    margin-top: 10px;
+   
+}
+.div_btn button{
+    background: none;
+    width: 80px;
+    height: 25px;
+    border-radius: 5px;
+    color: aliceblue;
+    border: solid 1px white;
+    cursor: pointer;
+
+}

@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400;1,500&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+#projetos{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.projetos_content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    
+}
+.cards_container{
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow-x: scroll;
+
+    /* background-color: #fff; */
+    animation: moveTxt 1.7s;
+    
+}
+/* .arrow-right,
+.arrow-left{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+
+    height: 400px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+.arrow-right{
+    background: linear-gradient(to left, transparent 0, black 200%);
+    left: 0;
+}
+.arrow-left{
+    background: linear-gradient(to right, transparent 0, black 200%);
+    right: 0;
+}
+.arrow-right:hover,
+.arrow-left:hover{
+    opacity: 1;
+} */
+
+.cards_container::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.cards{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+   
+   
+}
+.card{
+    background-color: #0e0f13;
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(201, 201, 201);
+    border: 1px solid rgba(202, 202, 202, 0.301);
+    box-shadow: #0e0f1388 0px 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+   
+    transition: all 0.5s;
+    
+}
+
+.card .div_img{
+    height: 20vh;
+
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card .div_img img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+   
+}
+.card .div_img div{
+    position: absolute;
+    background-color: #0e0f13c4;
+    width: 130%;
+    height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.5s;
+}
+.card .div_img span{
+    width: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke; 
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    transform: rotate(-25deg);
+    user-select: none;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card:hover > .div_img div{
+    opacity: 0.2;
+}
+.card:hover > .div_txt{
+    opacity: 1;
+}
+.card:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card .div_txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.card_title{
+    color:  rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+.card_description{
+    margin-top: 4px;
+    color: rgb(230, 230, 230);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+.card_inf{
+    margin-top: 15px;
+    color: rgb(236, 236, 236);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+
+    user-select: none;
+}
+
+.card_inf div{
+    display: flex;
+    flex-direction: row;
+}
+.card_inf div span{
+    margin-left: 5px;
+}
+.tipo span{
+    color: rgb(15, 255, 215);
+}
+.status{
+    margin-top: 3px;
+}
+.status span{ 
+    
+    color: rgb(255, 220, 23);
+}
+
+.div_btn{
+    margin-top: 10px;
+   
+}
+.div_btn button{
+    background: none;
+    width: 85px;
+    height: 25px;
+    border-radius: 5px;
+    color: aliceblue;
+    border: solid 1px white;
+    cursor: pointer;
+   
+    /* cursor: not-allowed; */
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    user-select: none;
+}
+
+
+@media screen and (max-width:850px) {
+    .projetos_content{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: relative;
+        /* background-color: antiquewhite; */
+        
+    }
+    .cards_container{
+        width: 100%;
+        height: 80vh;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+        position: relative;
+        overflow-x: scroll;  
+        
+    }
+    .cards_container::-webkit-scrollbar{
+        display: block;
+        -ms-overflow-style:auto;
+        scrollbar-width:inherit;
+       
+    }
+    .cards_container::-webkit-scrollbar {
+        height: 12px;               /* width of the entire scrollbar */
+      }
+      
+      .cards_container::-webkit-scrollbar-track {
+        background: rgb(211, 211, 211);        /* color of the tracking area */
+      }
+      
+      .cards_container::-webkit-scrollbar-thumb {
+        background-color: rgb(0, 0, 0);    /* color of the scroll thumb */
+        border-radius: 10px;       /* roundness of the scroll thumb */
+        border: 3px solid rgb(189, 189, 189);  /* creates padding around scroll thumb */
+      }
+    .cards{
+        height: 100%;
+        /* background-color: aquamarine; */
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .card{
+        width: 240px;
+        height: 380px;
+    }
+}
+
+@media screen and (max-width:300px) {
+
+    .card{
+        width: 200px;
+        height: 320px;
+    }
+    .card .div_img{
+       display: none;
+   
+    }
+}

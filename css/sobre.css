@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400;1,500&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+#sobre{
+    height: 100vh;
+    text-align: center;
+}
+#sobre h2{
+    animation: moveTxt 1.6s;
+}
+
+#sobre_container{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    /* background-color: aliceblue; */
+
+    animation: moveTxt 1.6s;
+}
+.subtitle{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #f6f6f6;
+
+    
+}
+#card_{
+    position: relative;
+    background-color: #15C1CE;
+    width: 100%;
+
+    
+}
+#sobre_card{
+    position: absolute;
+    height: 400px;
+    width: 270px;
+    background-color: #0b0c0f;
+    border: 1px solid rgb(93, 28, 155);
+    top: 10px;
+    left: 10px;
+
+    
+}
+#sobre_img{
+    height: 40%;
+    overflow: hidden;
+}
+#sobre_img img{
+    height: 155%;
+}
+
+#div_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5px;
+    
+}
+#nome{
+    
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: start;
+    color: #15C1CE;
+    margin: 5px 0px;
+    /* background-color: #f6f6f6; */
+}
+#txt{
+    
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #e5e5e5;
+    text-align: start;
+}
+
+#div_borda{
+    height: 400px;
+    width: 280px;
+    background-color: #ffffff;
+    
+    overflow: hidden;
+   
+}
+#div_borda img{
+    height: 120%;
+}
+
+
+
+
+/* ///// HABILIDADES \\\\\ */
+
+#habilidades_content{
+    height: 458px;
+    width: 50%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#habilidades_content .subtitle{
+    margin-top: 10px;
+}
+#habilidades{
+    height: 400px;
+    width: 100%;
+    top: 54px;
+    background-color: #0B0C0F;
+    margin: 0px 10px;
+    border: 1px solid rgb(93, 28, 155);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#habilidades_icons{
+    width: 100%;
+    margin-top: 10px;
+    color: #D8E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#habilidades_icons ul{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: #15C1CE; */
+}
+.li_habilidade_icons{
+    
+    height: 75px;
+    width: 65px;
+    /* background-color: #15C1CE; */
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+}
+.li_habilidade_icons img{
+    width: 100%;
+    
+}
+.icons{
+    width: 100%; 
+    position: absolute;
+    background-position: center;
+
+   
+}
+
+.name_icon{
+    background-color: #0b0c0f8c; 
+    height: 100%;
+    width: 110%;
+    position: absolute;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    opacity: 0;
+    transition: all 0.4s;
+    cursor: default;
+    user-select: none;
+}
+
+.li_habilidade_icons:hover  .name_icon{
+    opacity: 1;
+    
+}
+
+#habilidades_inf{
+    width: 90%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: #12151d;
+    margin-bottom: 10px;
+    color: #D8E5E5;
+    padding: 10px;
+}
+
+#habilidades_inf p{
+
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+#txt_desktop{
+    display: block;
+}
+#txt_mobile{
+    display: none;
+}
+
+
+
+
+.success,
+.error {
+  text-align: center;
+}
+
+.success {
+  color: greenyellow;
+}
+
+.error {
+  color: tomato;
+}
+
+
+
+@media screen and (max-width:850px) {
+    #sobre{
+        height: 160vh;
+        
+        /* background-color: #15C1CE; */
+        position: relative;
+    }
+    
+    #sobre_container{
+        flex-direction: column;
+
+        /* background-color: aliceblue; */
+    
+    }
+    #sobre_container{
+        justify-content: flex-start;
+        position: relative;
+        margin-top: 40px;
+    }
+    #habilidades_content{
+       width: 70%;
+    }
+    #habilidades_content .subtitle{
+        margin-top: 30px;
+    }
+
+}
+@media screen and (max-width:650px) {
+    .name_icon{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width:630px) {
+
+    #habilidades_content{
+       width: 90%;
+      
+    }
+    #txt_desktop{
+        display: none;
+    }
+    #txt_mobile{
+        display: block;
+    }
+ 
+}
+@media screen and (max-width:500px) {
+    #sobre{
+        height: 150vh;
+     
+     } 
+}
+@media screen and (max-width:480px) {
+
+    .li_habilidade_icons{
+    
+        height: 65px;
+        width: 55px;
+        /* background-color: #15C1CE; */
+    
+    }
+    #sobre{
+        height: 155vh;
+     
+     } 
+  
+ 
+}
+@media screen and (max-width:470px) {
+    #sobre{
+        height: 150vh;
+     
+     } 
+}
+
+
+@media screen and (max-width:400px) {
+
+    .li_habilidade_icons{
+    
+        height: 65px;
+        width: 55px;
+        /* background-color: #15C1CE; */
+    
+    }
+    .name_icon{
+        font-size: 1rem;
+    }
+    #habilidades_content{
+        width: 95%;
+
+     }
+
+    #habilidades_inf{
+        height: 60%;
+    }
+    
+    #habilidades_inf p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:370px) {
+
+    .li_habilidade_icons{
+    
+        height: 55px;
+        width: 45px;
+        /* background-color: #15C1CE; */
+    
+    }
+    .name_icon{
+        font-size: 0.9rem;
+    }
+
+    
+}
+@media screen and (max-width:350px) {
+    .li_habilidade_icons{
+        height: 55px;
+        width: 45px;
+        /* background-color: #15C1CE; */
+    
+    }
+    .name_icon{
+        font-size: 0.9rem;
+    }
+
+
+ 
+}
+@media screen and (max-width:300px) {
+    .li_habilidade_icons{
+        height: 55px;
+        width: 45px;
+        /* background-color: #15C1CE; */
+    }
+    .name_icon{
+        font-size: 0.8rem;
+    }
+    #habilidades_content{
+        width: 95%;
+       
+     }
+
+     #txt{
+        font-size: 15px;
+    }
+    #sobre_card{
+        width: 250px;
+ 
+    }
+    
+    #div_borda{
+        width: 260px;
+    }
+ 
+}
+@media screen and (max-width:280px) {
+  
+    #sobre_card{
+        width: 230px;
+    }
+    #div_borda{
+       
+        width: 240px;
+    }
+    #habilidades_inf{
+        height: 70%;
+    }
+
+    .li_habilidade_icons{
+    
+        height: 45px;
+        width: 35px;
+        /* background-color: #15C1CE; */
+    
+    }
+   
+}
+@media screen and (max-width:250px) {
+    #sobre_card{
+       
+        width: 210px;
+    }
+    #div_borda{
+       
+        width: 220px;
+    }
+    .name_icon{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width:230px) {
+    #sobre_card{
+       
+        width: 190px;
+    }
+    #div_borda{
+       
+        width: 200px;
+    }
+    #habilidades_content{
+        width: 95%;
+        
+      
+     }
+     
+     .name_icon{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width:210px) {
+    #sobre_card{
+       
+        width: 180px;
+    }
+    #div_borda{
+        width: 190px;
+    }
+}
