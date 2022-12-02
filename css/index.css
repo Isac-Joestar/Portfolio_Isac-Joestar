@@ -112,19 +112,19 @@ body::-webkit-scrollbar-thumb {
 
    
 }
-.li_contato_foco{
+/* .li_contato_foco{
     color:  aqua !important;
-    /* background: none; */
+    background: none;
     border: 1px solid  aqua;
     box-shadow:  0px 0px 25px aqua, 0px 0px 15px rgba(0, 255, 255, 0.925) inset;
-    /* text-shadow:  0px 0px 10px aqua, 0px 0px 3px aqua; */
+    text-shadow:  0px 0px 10px aqua, 0px 0px 3px aqua;
 }
 
 .foco{
     color: #ffffff !important;
     border-bottom: 1px solid aqua;
 }
-   
+    */
 
 
 /* ///// MAIN \\\\\  */

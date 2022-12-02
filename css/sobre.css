@@ -173,15 +173,18 @@
     color: #ffffff;
     font-family: 'PT Sans', sans-serif;
     opacity: 0;
+
     transition: all 0.4s;
     cursor: default;
     user-select: none;
 }
 
-.li_habilidade_icons:hover  .name_icon{
+.li_habilidade_icons:hover > .name_icon{
     opacity: 1;
     
 }
+
+
 
 #habilidades_inf{
     width: 90%;
@@ -191,13 +194,23 @@
     margin-bottom: 10px;
     color: #D8E5E5;
     padding: 10px;
-}
-
-#habilidades_inf p{
 
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 20px;
+
+    position: relative;
+}
+#habilidades_inf p{
+    animation:  txtInfAnime 1.5s;
+}
+@keyframes txtInfAnime {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 #txt_desktop{
     display: block;
@@ -205,24 +218,6 @@
 #txt_mobile{
     display: none;
 }
-
-
-
-
-.success,
-.error {
-  text-align: center;
-}
-
-.success {
-  color: greenyellow;
-}
-
-.error {
-  color: tomato;
-}
-
-
 
 @media screen and (max-width:850px) {
     #sobre{

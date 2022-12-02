@@ -35,36 +35,7 @@
     animation: moveTxt 1.7s;
     
 }
-/* .arrow-right,
-.arrow-left{
-    display: none;
-    position: absolute;
-    z-index: 2;
-    font-size: 20px;
-    line-height: 250px;
-    width: 40px;
 
-    height: 400px;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-
-    opacity: 0.5;
-    transition: all 0.3s ease-in-out;
-}
-.arrow-right{
-    background: linear-gradient(to left, transparent 0, black 200%);
-    left: 0;
-}
-.arrow-left{
-    background: linear-gradient(to right, transparent 0, black 200%);
-    right: 0;
-}
-.arrow-right:hover,
-.arrow-left:hover{
-    opacity: 1;
-} */
 
 .cards_container::-webkit-scrollbar{
     display: none;
