@@ -202,7 +202,7 @@
     position: relative;
 }
 #habilidades_inf p{
-    animation:  txtInfAnime 1.5s;
+    animation:  txtInfAnime 1.2s;
 }
 @keyframes txtInfAnime {
     0%{
