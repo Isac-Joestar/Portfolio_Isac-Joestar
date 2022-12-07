@@ -54,14 +54,14 @@
    
 }
 .card{
-    background-color: #0e0f13;
+    background-color: #0B0C0F;
     width: 270px;
     height: 400px;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    color: rgb(201, 201, 201);
-    border: 1px solid rgba(202, 202, 202, 0.301);
+    color: rgb(2, 2, 2);
+    border: 1px solid rgba(247, 247, 247, 0.301);
     box-shadow: #0e0f1388 0px 10px 20px;
 
     display: flex;
@@ -90,7 +90,7 @@
 }
 .card .div_img div{
     position: absolute;
-    background-color: #0e0f13c4;
+    background-color: #1a1c24a4;
     width: 130%;
     height: 120%;
     display: flex;
