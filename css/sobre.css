@@ -250,6 +250,9 @@
     .name_icon{
         font-size: 1.4rem;
     }
+    #sobre{
+        margin-bottom: 7vh;
+    }
 }
 @media screen and (max-width:630px) {
 
@@ -293,8 +296,6 @@
      
      } 
 }
-
-
 @media screen and (max-width:400px) {
 
     .li_habilidade_icons{
@@ -320,7 +321,6 @@
         font-size: 18px;
     }
 }
-
 @media screen and (max-width:370px) {
 
     .li_habilidade_icons{
