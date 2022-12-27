@@ -236,8 +236,8 @@ main{
         position: absolute;
         right: 0;
         top: 0;
-        width: 30vw;
-        height: 35vh;
+        min-width: 15vw;
+        min-height: 15vh;
         border-radius:  0px 0px 0px 100%;
 
         display: flex;
@@ -246,27 +246,29 @@ main{
         user-select: none;
         /* background-color: #15C1CE; */
         transition: all 0.5s;
+        
     }
-    .change_bg{
-        width: 50vw !important;
-        height: 60vh !important;
-  
-       
-    }
+ 
     #header_div_content nav ul{
-        width: 100%;
-        height: 100%;
+        position: absolute;
+        z-index: -1;
+        width: 0vw;
+        height: 0vh;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         justify-content: center;
         background-color: #0e0f1381;
         border-radius:  0px 0px 0px 100%;
-       
+        overflow: hidden;
+
         transition: all 0.5s;
         
     }
-   
+    .change_bg{
+        width: 50vw !important;
+        height: 60vh !important;
+    }
    
     .of{
         display: none !important;

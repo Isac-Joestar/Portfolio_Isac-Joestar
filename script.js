@@ -62,13 +62,19 @@ document.querySelectorAll('.menu').forEach((e)=>{
             e.style.display = 'none'
             fechar.style.display = 'flex'
             ulMenu.classList.remove('of')
-            nav.classList.add('change_bg')
+           
+            setTimeout(()=>{
+              ulMenu.classList.add('change_bg')
+            }, 1)
+        
         }else{
             e.style.display = 'none'
             abrir.style.display = 'flex'
-
-            nav.classList.remove('change_bg')
-            ulMenu.classList.add('of')  
+            ulMenu.classList.remove('change_bg')
+            setTimeout(()=>{
+              ulMenu.classList.add('of')  
+            }, 500)
+           
             
         }
     })
