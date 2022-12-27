@@ -252,7 +252,7 @@
     #sobre{
         height: auto;
         /* background-color: #15C1CE; */
-        margin-bottom: 7vh;
+        margin-bottom: 10vh;
         position: relative;
     }
 
@@ -283,7 +283,6 @@
   
  
 }
-
 @media screen and (max-width:400px) {
 
     .li_habilidade_icons{
