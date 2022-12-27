@@ -111,7 +111,6 @@
 #habilidades{
     height: 400px;
     width: 100%;
-    top: 54px;
     background-color: #0B0C0F;
     margin: 0px 10px;
     border: 1px solid rgb(93, 28, 155);
@@ -229,7 +228,7 @@
     
     #sobre_container{
         flex-direction: column;
-
+        height: auto;
         /* background-color: aliceblue; */
     
     }
@@ -251,8 +250,12 @@
         font-size: 1.4rem;
     }
     #sobre{
-        margin-bottom: 4vh;
+        height: auto;
+        /* background-color: #15C1CE; */
+        margin-bottom: 7vh;
+        position: relative;
     }
+
 }
 @media screen and (max-width:630px) {
 
@@ -268,12 +271,6 @@
     }
  
 }
-@media screen and (max-width:500px) {
-    #sobre{
-        height: 150vh;
-     
-     } 
-}
 @media screen and (max-width:480px) {
 
     .li_habilidade_icons{
@@ -283,19 +280,10 @@
         /* background-color: #15C1CE; */
     
     }
-    #sobre{
-        height: 155vh;
-     
-     } 
   
  
 }
-@media screen and (max-width:470px) {
-    #sobre{
-        height: 150vh;
-     
-     } 
-}
+
 @media screen and (max-width:400px) {
 
     .li_habilidade_icons{
