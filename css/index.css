@@ -228,7 +228,7 @@ main{
 
 @media screen and (max-width:650px){
     #home header{
-        height: 7vh;
+        height: 10vh;
  
     }
     #header_div_content nav{
@@ -285,7 +285,7 @@ main{
         display: flex;
     }
     .btn_menu{
-        top: 10px;
+        top: 19px;
         right: 25px;
         font-size: 2rem;
         color: white;
