@@ -232,13 +232,14 @@ main{
  
     }
     #header_div_content{
-        display: flex;
+        /* display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        align-items: center; */
     }
     #header_div_content nav{
-       
+        top: 0;
+        right: 0;
+        position: absolute;
         width: auto;
         height: auto;
         border-radius:  0px 0px 0px 100%;
@@ -258,8 +259,6 @@ main{
         z-index: 9;
         width: 0vw;
         height: 0vh;
-        top: 0;
-        right: 0;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -289,9 +288,7 @@ main{
   
     #header_div_content .btn_menu{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        
     }
     .btn_menu{
         top: 25px;
@@ -402,7 +399,7 @@ main{
         height: 50vh !important;
     }
     .btn_menu{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         /* background-color: #15C1CE; */
     }
 
