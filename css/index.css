@@ -368,8 +368,9 @@ main{
         font-size: 1.4rem;
     }
     #header_div_content nav{
-        width: 40vw;
-        height: 40vh;
+        width: auto;
+        height: auto;
+        background-color: #15C1CE;
     }
     .change_bg{
         width: 70vw !important;
