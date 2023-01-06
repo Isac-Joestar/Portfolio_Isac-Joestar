@@ -231,13 +231,16 @@ main{
         height: 10vh;
  
     }
+    #header_div_content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
     #header_div_content nav{
        
-        position: absolute;
-        right: 0;
-        top: 0;
-        min-width: 15vw;
-        min-height: 15vh;
+        width: auto;
+        height: auto;
         border-radius:  0px 0px 0px 100%;
 
         display: flex;
@@ -246,14 +249,17 @@ main{
         user-select: none;
         /* background-color: #15C1CE; */
         transition: all 0.5s;
+        z-index: 8;
         
     }
  
     #header_div_content nav ul{
         position: absolute;
-        z-index: -1;
+        z-index: 9;
         width: 0vw;
         height: 0vh;
+        top: 0;
+        right: 0;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -283,16 +289,21 @@ main{
   
     #header_div_content .btn_menu{
         display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
     .btn_menu{
-        top: 19px;
+        top: 25px;
         right: 25px;
         font-size: 2rem;
         color: white;
         position: absolute;
-        /* background-color: #1d1e26; */
+        /* background-color: #0a91ff; */
+      
         cursor: pointer;
         user-select: none;
+        z-index: 10;
        
     }
     .btn_menu .abrir{
@@ -391,10 +402,8 @@ main{
         height: 50vh !important;
     }
     .btn_menu{
-      
-        font-size: 1.5rem;
-     
-       
+        font-size: 1.7rem;
+        /* background-color: #15C1CE; */
     }
 
 }
